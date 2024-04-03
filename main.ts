@@ -22,7 +22,7 @@ if (userEnteredPin.userPin === pin) {
 console.log("Low Balance");
     }
     else{
-      console.log(`Your Remaining Balance is ${balance - amount.amount}`);
+      console.log(`Your Remaining Balance is ${balance - amount.amounts}`);
     }
 }
 else if(option.choice === "Balance Check"){
