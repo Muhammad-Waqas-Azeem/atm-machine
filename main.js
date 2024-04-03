@@ -18,7 +18,7 @@ if (userEnteredPin.userPin === pin) {
             { message: "Enter Amount", type: "number", name: "amounts" },
         ]);
         if (amount.amounts > balance) {
-            console.log("Low Balance");
+            console.log("Insufficient Balance");
         }
         else {
             console.log(`Your Remaining Balance is ${balance - amount.amounts}`);
