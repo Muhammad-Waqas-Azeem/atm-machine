@@ -4,7 +4,7 @@ let balance: number = 10000;
 let userEnteredPin = await inquirer.prompt([
   { message: "Enter Your Pin", type: "number", name: "userPin" },
 ]);
-if (userEnteredPin.userPin === 2003) {
+if (userEnteredPin.userPin === pin) {
   console.log(`Your balance is ${balance}`);
   
   let option = await inquirer.prompt(

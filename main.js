@@ -6,14 +6,12 @@ let userEnteredPin = await inquirer.prompt([
 ]);
 if (userEnteredPin.userPin === 2003) {
     console.log(`Your balance is ${balance}`);
-    let option = await inquirer.prompt([
-        {
-            message: "What do you want",
-            type: "list",
-            name: "choice",
-            choices: ["Cash Withdrawl", "Balance Check"],
-        },
-    ]);
+    let option = await inquirer.prompt({
+        message: "What do you want",
+        type: "list",
+        name: "choice",
+        choices: ["Cash Withdrawl", "Balance Check"],
+    });
     if (option.choice === "Cash Withdrawl") {
         let amount = await inquirer.prompt([{ message: "Enter Amount", type: "number", name: "amount" }]);
         console.log(`Your Remaining Balance is ${balance - amount.amount}`);
