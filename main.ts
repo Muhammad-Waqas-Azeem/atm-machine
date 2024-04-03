@@ -20,7 +20,8 @@ if (userEnteredPin.userPin === pin) {
     ]);
     if (amount.amounts > balance) {
       console.log("Low Balance");
-    } else {
+    } 
+    else {
       console.log(`Your Remaining Balance is ${balance - amount.amounts}`);
     }
   } else if (option.choice === "Balance Check") {
@@ -33,10 +34,10 @@ if (userEnteredPin.userPin === pin) {
       choices: ["500", "1000", "2000", "3000", "4000", "5000"],
     });
     console.log(`Your Remaining Balance is ${balance - fastAmount.amount}`);
-  } else {
+  }
+   else {
     console.log("Invalid amount Please Enter Amount in Numbers");
   }
-}
- else {
+} else {
   console.log("Wrong Pin");
 }
