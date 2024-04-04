@@ -1,5 +1,5 @@
 {
-  "name": "atm-machine",
+  "name": "mwr-tc64-atm-machine",
   "version": "1.0.0",
   "description": "A Simple ATM Machine",
   "main": "index.js",

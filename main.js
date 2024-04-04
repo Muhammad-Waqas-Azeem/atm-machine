@@ -33,9 +33,14 @@ if (userEnteredPin.userPin === pin) {
             name: "amount",
             message: "Select any fixed amount for fast withdrawl",
             type: "list",
-            choices: ["500", "1000", "2000", "3000", "4000", "5000"],
+            choices: ["500", "1000", "2000", "3000", "5000", "12000"],
         });
-        console.log(`Your Remaining Balance is ${balance - fastAmount.amount}`);
+        if (fastAmount.amount > balance) {
+            console.log("Insufficient Balance");
+        }
+        else {
+            console.log(`Your Remaining Balance is ${balance - fastAmount.amount}`);
+        }
     }
     else {
         console.log("Invalid amount Please Enter Amount in Numbers");
